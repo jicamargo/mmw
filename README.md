@@ -87,28 +87,21 @@ This is a demo site with de "Miami Music Weekend Information". It's a Capstone f
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-
   <summary>Client</summary>
-
   <ul>
-
     <li>HTML</li>
-
-    <li>CSS</li>
-
+    <li>CSS / SASS</li>
+    <li>BOOTSTRAP</li>
+    <li>JAVASCRIPT</li>
   </ul>
-
 </details>
- 
+
 ## ⭐️ Key Features <a name="key-features"></a> 
 
-- **["First mobile" design]**
-
-- **[Responsive Web Design]**
-
-- **[Animations and transitions]**
-
-- **["pop-up window to musicians details]**
+- **"First mobile" design**
+- **Responsive Web Design**
+- **Animations and transitions**
+- **"pop-up window to musicians details**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LIVE DEMO -->
@@ -129,35 +122,28 @@ Open this site in your browser and enjoy.
 [comming soon](https://)
 
 ### Prerequisites
-
-In order to run this project you need:
-
-A modern browser for like Mozilla, Chrome, Edge, etc. that supports HTML5 and CSS
+  In order to run this project you need:
+  A modern browser for like Mozilla, Chrome, Edge, etc. that supports HTML5 and CSS
 
 ### Setup
-
-This application runs directly (it does not need any setup process)
+  This application runs directly (it does not need any setup process)
 
 ### Install
-
-Install this project with:
-
-This application runs directly (it does not need any install process)
+  Install this project with:
+  This application runs directly (it does not need any install process)
 
 ### Usage
-
-Enter to index.html web page
+  Enter to index.html web page
 
 ### Run tests
-
-No tests needed, you can enter directly to index.html
+  No tests needed, you can enter directly to index.html
 
 ### Deployment
+  No deployment needed, you can enter directly to index.html
 
-No deployment needed, you can enter directly to index.html
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!-- AUTHORS -->
 
+<!-- AUTHORS -->
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Jorge Camargo**
@@ -187,10 +173,13 @@ If you like this project, please give a ⭐️ (Thank you)
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Microverse team
+- [Microverse team]()https://microverse.org/
+- [Creative Commons](https://creativecommons.org/)
+  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is licensed:
+- [Creative Commons license of the design](https://creativecommons.org/licenses/by-nc/4.0/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
