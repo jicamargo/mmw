@@ -152,18 +152,21 @@ Open this site in your browser and enjoy.
 - Twitter: [@ji_camargo](https://twitter.com/ji_camargo)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/jorgecamargog)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- FUTURE FEATURES -->
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **[Fancy animations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTRIBUTING -->
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- SUPPORT -->
 ## ⭐️ Show your support <a name="support"></a>
 
@@ -177,6 +180,7 @@ If you like this project, please give a ⭐️ (Thank you)
 - [Creative Commons](https://creativecommons.org/)
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 📝 License <a name="license"></a>
 
 This project is licensed:
