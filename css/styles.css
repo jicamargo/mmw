@@ -16,12 +16,33 @@ html, body {
   height: 100%;
 }
 
+.nav-item {
+  font-weight: bolder;
+}
 .nav-item :hover {
   background-color: #ec5242;
 }
 
+.top-menu, .navbar {
+  background-color: #d3d3d3 !important;
+  padding: 0.2rem 0.5rem;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.show .nav-item {
+  text-align: center;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 .hero {
-  height: 500px;
+  height: auto;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(38, 38, 38, 0.9)), color-stop(rgba(38, 38, 38, 0.4)), to(rgba(236, 82, 66, 0.7))), url("../images/mmw-sm-logo.png"), url("../images/mmw-2023.webp");
   background-image: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.4), rgba(236, 82, 66, 0.7)), url("../images/mmw-sm-logo.png"), url("../images/mmw-2023.webp");
@@ -31,6 +52,7 @@ html, body {
 }
 
 .hero-title {
+  margin-top: 6rem;
   background-image: url("../images/mmw-sqr-logo.png");
   background-size: contain;
   -webkit-background-clip: text;
@@ -78,6 +100,7 @@ html, body {
 
 .title-page {
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .short-line-center {
@@ -90,11 +113,12 @@ html, body {
 
 .card {
   background-color: rgba(211, 211, 211, 0.062745098);
+  cursor: pointer;
 }
 .card .card-title {
   color: #ec5242;
   font-family: "cocogoose";
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .card .card-text {
   color: #d3d3d3;
@@ -105,8 +129,14 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .card .img-cnt .img-fluid {
+  width: 90%;
+  border-radius: 50%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -123,4 +153,40 @@ html, body {
 
 .btn-join {
   background-color: #ec5242;
+  cursor: pointer;
+}
+
+.spk-card-name {
+  color: #272a31;
+  font-family: "lato", serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.spk-card-title {
+  color: #ec5242;
+  font-family: "cocogoose-it";
+  font-size: 0.8rem;
+}
+
+.spk-card-text {
+  color: #272a31;
+  font-family: "lato", serif;
+  font-size: 0.8rem;
+}
+
+.spk-short-line {
+  border-top: 2px solid #d3d3d3;
+  height: 2px;
+  max-width: 30px;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+/****************** desktop version (768px) ***********************/
+@media screen and (min-width: 768px) {
+  .card .img-cnt .img-fluid {
+    margin-top: 1rem;
+    width: 50%;
+  }
 }

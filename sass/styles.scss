@@ -28,20 +28,34 @@ html, body {
 }
 
 .nav-item {
+  font-weight: bolder;
   :hover {
     background-color: $color-orange;
   }
 }
 
-// .hero {
-//   background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgb(236, 82, 66, 0.8)), url("../images/mmw-2023.webp") no-repeat;
-//  .title-hello {
-//     font-family: $font-coco;
-//     color: $color-orange;
-//  }
+
+.top-menu, .navbar{
+  background-color: $color-light-gray !important;
+  padding: 0.2rem 0.5rem;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.show {
+  .nav-item {
+     text-align: center;
+  }
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
 
  .hero {
-  height: 500px;
+  height: auto;
   width: 100%;
   background-image: linear-gradient(to right, rgba(38, 38, 38, 0.9),  rgba(38, 38, 38, 0.4), rgb(236, 82, 66, 0.7)), url("../images/mmw-sm-logo.png"), url("../images/mmw-2023.webp");
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -50,6 +64,7 @@ html, body {
 }
 
 .hero-title {
+  margin-top: 6rem;
   background-image: url('../images/mmw-sqr-logo.png');
   background-size:contain;
   -webkit-background-clip: text;
@@ -81,16 +96,17 @@ html, body {
   backdrop-filter: saturate(150%);
 }
  
- 
 .title-date {
   margin-top: 2rem;
   font-family: $font-coco-it;
   color: $color-light-gray;
 }
+
 .title-place {
   font-family: $font-coco;
   color: $color-light-gray;
   font-size: small;
+  
 }
 
 .page2 {
@@ -99,6 +115,7 @@ html, body {
 
 .title-page {
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .short-line-center {
@@ -111,11 +128,12 @@ html, body {
 
 .card {
   background-color: $color-light-gray-transparent;
+  cursor: pointer;
 
   .card-title {
     color: $color-orange;
     font-family: $font-coco;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .card-text {
@@ -125,11 +143,13 @@ html, body {
   } 
 
   .img-cnt {
-    // background-color: $color-light-gray;
     display: flex;
-    
+    text-align: center;
+    justify-content: center;
     .img-fluid {
-      align-self: center;
+      width: 90%;
+      border-radius: 50%;
+      align-self: center;   
       backdrop-filter: invert(90%);
     }
   }
@@ -144,5 +164,42 @@ html, body {
 
 .btn-join {
   background-color: $color-orange;
-  
+  cursor: pointer; 
+}
+
+.spk-card-name {
+  color: $color-dark-gray;
+  font-family: $font-lato;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.spk-card-title {
+  color: $color-orange;
+  font-family: $font-coco-it;
+  font-size: 0.8rem;
+}
+
+.spk-card-text {
+  color: $color-dark-gray;
+  font-family: $font-lato;
+  font-size: 0.8rem;
+} 
+
+.spk-short-line {
+  border-top: 2px solid $color-light-gray;
+  height: 2px;
+  max-width: 30px;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+/****************** desktop version (768px) ***********************/
+
+@media screen and (min-width: 768px) {
+ 
+  .card .img-cnt .img-fluid {
+      margin-top: 1rem;
+      width: 50%;
+  }
 }
