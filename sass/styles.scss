@@ -11,31 +11,38 @@ $font-coco-it: 'cocogoose-it';
   font-family: cocogoose;
   src: url('../fonts/cocogoose-pro.ttf');
 }
+
 @font-face {
   font-family: cocogoose-it;
   src: url('../fonts/cocogoose-pro-italic.ttf');
 }
-
 
 * {
   margin: 0;
   padding: 0;
   font-family: $font-lato;
 }
-  
-html, body {
+
+html,
+body {
   height: 100%;
 }
 
 .nav-item {
   font-weight: bolder;
+
   :hover {
     background-color: $color-orange;
   }
 }
 
+.logo-navbar {
+  height: 30px;
+  width: auto;
+}
 
-.top-menu, .navbar{
+.top-menu,
+.navbar {
   background-color: $color-light-gray !important;
   padding: 0.2rem 0.5rem;
 }
@@ -46,7 +53,7 @@ html, body {
 
 .show {
   .nav-item {
-     text-align: center;
+    text-align: center;
   }
 }
 
@@ -54,10 +61,10 @@ html, body {
   box-shadow: none !important;
 }
 
- .hero {
+.hero {
   height: auto;
   width: 100%;
-  background-image: linear-gradient(to right, rgba(38, 38, 38, 0.9),  rgba(38, 38, 38, 0.4), rgb(236, 82, 66, 0.7)), url("../images/mmw-sm-logo.png"), url("../images/mmw-2023.webp");
+  background-image: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.4), rgb(236, 82, 66, 0.7)), url("../images/mmw-sm-logo.png"), url("../images/mmw-2023.webp");
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: bottom right, bottom right, right;
   background-size: contain, 30%, cover;
@@ -66,7 +73,7 @@ html, body {
 .hero-title {
   margin-top: 6rem;
   background-image: url('../images/mmw-sqr-logo.png');
-  background-size:contain;
+  background-size: contain;
   -webkit-background-clip: text;
   color: transparent;
   filter: brightness(120%);
@@ -75,15 +82,15 @@ html, body {
     padding-top: 1rem;
     font-family: $font-coco;
   }
-  
+
   .title-mmw {
     font-family: $font-coco;
   }
-  
+
   .title-year {
     font-family: $font-coco-it;
   }
-  
+
   .title-slogan {
     font-family: $font-coco;
     font-size: small;
@@ -95,7 +102,7 @@ html, body {
   color: $color-light-gray;
   backdrop-filter: saturate(150%);
 }
- 
+
 .title-date {
   margin-top: 2rem;
   font-family: $font-coco-it;
@@ -106,7 +113,6 @@ html, body {
   font-family: $font-coco;
   color: $color-light-gray;
   font-size: small;
-  
 }
 
 .page2 {
@@ -140,15 +146,16 @@ html, body {
     color: $color-light-gray;
     font-family: $font-lato;
     font-size: 0.8rem;
-  } 
+  }
 
   .img-cnt {
     display: flex;
     text-align: center;
     justify-content: center;
+
     .img-fluid {
       border-radius: 50%;
-      align-self: center;   
+      align-self: center;
       backdrop-filter: invert(90%);
     }
   }
@@ -158,7 +165,7 @@ html, body {
   width: 90%;
 }
 
-/************************************************/
+/***********************************************   */
 .img-spk {
   position: absolute;
   width: 100px;
@@ -176,7 +183,8 @@ html, body {
   background-image: url(../images/chess.jpg);
   background-size: contain;
 }
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .title-bottom-page {
   padding-top: 2rem;
@@ -187,7 +195,7 @@ html, body {
 
 .btn-join {
   background-color: $color-orange;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .spk-card-name {
@@ -207,7 +215,7 @@ html, body {
   color: $color-dark-gray;
   font-family: $font-lato;
   font-size: 0.8rem;
-} 
+}
 
 .spk-short-line {
   border-top: 2px solid $color-light-gray;
@@ -225,7 +233,7 @@ html, body {
 .about-hero-title {
   margin-top: 6rem;
   background-image: url('../images/mmw-sqr-logo.png');
-  background-size:contain;
+  background-size: contain;
   -webkit-background-clip: text;
   color: transparent;
   filter: brightness(120%);
@@ -234,15 +242,15 @@ html, body {
     padding-top: 1rem;
     font-family: $font-coco;
   }
-  
+
   .title-mmw {
     font-family: $font-coco-it;
   }
-  
+
   .title-year {
     font-family: $font-coco-it;
   }
-  
+
   .title-slogan {
     font-family: $font-coco;
     font-size: small;
@@ -254,12 +262,12 @@ html, body {
     font-weight: bolder;
     color: $color-light-gray;
   }
-  
+
   .title-place {
     font-family: $font-lato;
     color: $color-light-gray;
-    font-size: small; 
-  }  
+    font-size: small;
+  }
 }
 
 .card-gallery {
@@ -270,7 +278,7 @@ html, body {
 .card-img-overlay {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -288,18 +296,18 @@ html, body {
   font-weight: bolder;
   text-shadow: $color-dark-gray 2px 2px;
   font-size: 1rem;
-} 
+}
 
 .img-gallery {
   height: 180px;
 }
+
 /****************** desktop version (768px) ***********************/
 
 @media screen and (min-width: 768px) {
- 
   .img-card {
-      margin-top: 1rem;
-      width: 50%;
+    margin-top: 1rem;
+    width: 50%;
   }
 
   .footer-img-logo {
@@ -309,5 +317,4 @@ html, body {
   .img-gallery {
     height: 270px;
   }
-  
 }

@@ -23,6 +23,11 @@ html, body {
   background-color: #ec5242;
 }
 
+.logo-navbar {
+  height: 30px;
+  width: auto;
+}
+
 .top-menu, .navbar {
   background-color: #d3d3d3 !important;
   padding: 0.2rem 0.5rem;
