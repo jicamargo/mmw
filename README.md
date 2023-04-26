@@ -177,7 +177,7 @@ If you like this project, please give a ⭐️ (Thank you)
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - [Microverse team]()https://microverse.org/
-- [Creative Commons](https://creativecommons.org/)
+- [Creative Commons.](https://creativecommons.org/)
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
