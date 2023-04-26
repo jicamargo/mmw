@@ -1,13 +1,126 @@
+@font-face {
+  font-family: cocogoose;
+  src: url("../fonts/cocogoose-pro.ttf");
+}
+@font-face {
+  font-family: cocogoose-it;
+  src: url("../fonts/cocogoose-pro-italic.ttf");
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: "lato", serif;
 }
 
 html, body {
   height: 100%;
 }
 
-@font-face {
-  font-family: cocogoose;
-  src: url("../fonts/cocogoose-pro.ttf");
+.nav-item :hover {
+  background-color: #ec5242;
+}
+
+.hero {
+  height: 500px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(38, 38, 38, 0.9)), color-stop(rgba(38, 38, 38, 0.4)), to(rgba(236, 82, 66, 0.7))), url("../images/mmw-sm-logo.png"), url("../images/mmw-2023.webp");
+  background-image: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.4), rgba(236, 82, 66, 0.7)), url("../images/mmw-sm-logo.png"), url("../images/mmw-2023.webp");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom right, bottom right, right;
+  background-size: contain, 30%, cover;
+}
+
+.hero-title {
+  background-image: url("../images/mmw-sqr-logo.png");
+  background-size: contain;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+.hero-title .title-hello {
+  padding-top: 1rem;
+  font-family: "cocogoose";
+}
+.hero-title .title-mmw {
+  font-family: "cocogoose";
+}
+.hero-title .title-year {
+  font-family: "cocogoose-it";
+}
+.hero-title .title-slogan {
+  font-family: "cocogoose";
+  font-size: small;
+}
+
+.title-descrip {
+  font-family: "lato", serif;
+  color: #d3d3d3;
+  -webkit-backdrop-filter: saturate(150%);
+          backdrop-filter: saturate(150%);
+}
+
+.title-date {
+  margin-top: 2rem;
+  font-family: "cocogoose-it";
+  color: #d3d3d3;
+}
+
+.title-place {
+  font-family: "cocogoose";
+  color: #d3d3d3;
+  font-size: small;
+}
+
+.page2 {
+  background: url("../images/background-x.png") repeat;
+}
+
+.title-page {
+  font-size: 1.2rem;
+}
+
+.short-line-center {
+  border-top: 2px solid #ec5242;
+  height: 2px;
+  max-width: 50px;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+
+.card {
+  background-color: rgba(211, 211, 211, 0.062745098);
+}
+.card .card-title {
+  color: #ec5242;
+  font-family: "cocogoose";
+  font-size: 0.8rem;
+}
+.card .card-text {
+  color: #d3d3d3;
+  font-family: "lato", serif;
+  font-size: 0.8rem;
+}
+.card .img-cnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card .img-cnt .img-fluid {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-backdrop-filter: invert(90%);
+          backdrop-filter: invert(90%);
+}
+
+.title-bottom-page {
+  padding-top: 2rem;
+  font-size: 1rem;
+  color: #d3d3d3;
+  font-family: "lato", serif;
+}
+
+.btn-join {
+  background-color: #ec5242;
 }

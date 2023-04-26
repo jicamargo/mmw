@@ -1,14 +1,148 @@
+$color-dark-gray: #272a31;
+$color-dark-gray-transparent: #272a3180;
+$color-orange: #ec5242;
+$color-light-gray: #d3d3d3;
+$color-light-gray-transparent: #d3d3d310;
+$font-lato: 'lato', serif;
+$font-coco: 'cocogoose';
+$font-coco-it: 'cocogoose-it';
+
+@font-face {
+  font-family: cocogoose;
+  src: url('../fonts/cocogoose-pro.ttf');
+}
+@font-face {
+  font-family: cocogoose-it;
+  src: url('../fonts/cocogoose-pro-italic.ttf');
+}
+
+
 * {
   margin: 0;
   padding: 0;
-  }
+  font-family: $font-lato;
+}
   
 html, body {
   height: 100%;
+}
+
+.nav-item {
+  :hover {
+    background-color: $color-orange;
+  }
+}
+
+// .hero {
+//   background: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgb(236, 82, 66, 0.8)), url("../images/mmw-2023.webp") no-repeat;
+//  .title-hello {
+//     font-family: $font-coco;
+//     color: $color-orange;
+//  }
+
+ .hero {
+  height: 500px;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(38, 38, 38, 0.9),  rgba(38, 38, 38, 0.4), rgb(236, 82, 66, 0.7)), url("../images/mmw-sm-logo.png"), url("../images/mmw-2023.webp");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom right, bottom right, right;
+  background-size: contain, 30%, cover;
+}
+
+.hero-title {
+  background-image: url('../images/mmw-sqr-logo.png');
+  background-size:contain;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: brightness(120%);
+
+  .title-hello {
+    padding-top: 1rem;
+    font-family: $font-coco;
+  }
+  
+  .title-mmw {
+    font-family: $font-coco;
+  }
+  
+  .title-year {
+    font-family: $font-coco-it;
+  }
+  
+  .title-slogan {
+    font-family: $font-coco;
+    font-size: small;
+  }
+}
+
+.title-descrip {
+  font-family: $font-lato;
+  color: $color-light-gray;
+  backdrop-filter: saturate(150%);
+}
+ 
+ 
+.title-date {
+  margin-top: 2rem;
+  font-family: $font-coco-it;
+  color: $color-light-gray;
+}
+.title-place {
+  font-family: $font-coco;
+  color: $color-light-gray;
+  font-size: small;
+}
+
+.page2 {
+  background: url("../images/background-x.png") repeat;
+}
+
+.title-page {
+  font-size: 1.2rem;
+}
+
+.short-line-center {
+  border-top: 2px solid $color-orange;
+  height: 2px;
+  max-width: 50px;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+
+.card {
+  background-color: $color-light-gray-transparent;
+
+  .card-title {
+    color: $color-orange;
+    font-family: $font-coco;
+    font-size: 0.8rem;
   }
 
-  @font-face {
-    font-family: cocogoose;
-    src: url('../fonts/cocogoose-pro.ttf');
-  }
+  .card-text {
+    color: $color-light-gray;
+    font-family: $font-lato;
+    font-size: 0.8rem;
+  } 
 
+  .img-cnt {
+    // background-color: $color-light-gray;
+    display: flex;
+    
+    .img-fluid {
+      align-self: center;
+      backdrop-filter: invert(90%);
+    }
+  }
+}
+
+.title-bottom-page {
+  padding-top: 2rem;
+  font-size: 1rem;
+  color: $color-light-gray;
+  font-family: $font-lato;
+}
+
+.btn-join {
+  background-color: $color-orange;
+  
+}
