@@ -12,7 +12,8 @@
   font-family: "lato", serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -21,6 +22,7 @@ html, body {
 }
 .nav-item :hover {
   background-color: #ec5242;
+  color: #d3d3d3;
 }
 
 .logo-navbar {
@@ -28,7 +30,8 @@ html, body {
   width: auto;
 }
 
-.top-menu, .navbar {
+.top-menu,
+.navbar {
   background-color: #d3d3d3 !important;
   padding: 0.2rem 0.5rem;
 }
@@ -46,6 +49,51 @@ html, body {
           box-shadow: none !important;
 }
 
+/****************** MENU MOBILE *********************************************/
+.menu-bar-movil .slidemenu {
+  position: fixed;
+  background: #d3d3d3;
+  text-align: center;
+  top: 0;
+  padding: 0 1.5rem;
+  width: 100%;
+  height: 100vh;
+  /* to start hidden and showing it with "slide" animation */
+  left: -100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu-bar-movil .slidemenu.active {
+  left: 0;
+}
+
+.btn-close-slide-menu {
+  display: block;
+  text-align: right;
+  height: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.btn-close-icon {
+  height: 1rem;
+}
+
+.item-menu-mobile {
+  display: block;
+  font-family: "lato", serif;
+  color: #272a31;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid rgba(39, 42, 49, 0.5019607843);
+}
+
+/* ------------  menu mobile ---------------------- */
 .hero {
   height: auto;
   width: 100%;
@@ -152,7 +200,7 @@ html, body {
   width: 90%;
 }
 
-/************************************************/
+/***********************************************   */
 .img-spk {
   position: absolute;
   width: 100px;
@@ -171,7 +219,7 @@ html, body {
   background-size: contain;
 }
 
-/*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .title-bottom-page {
   padding-top: 2rem;
   font-size: 1rem;
@@ -294,6 +342,9 @@ html, body {
 
 /****************** desktop version (768px) ***********************/
 @media screen and (min-width: 768px) {
+  .menu-bar-movil .slidemenu {
+    padding: 0 5rem;
+  }
   .img-card {
     margin-top: 1rem;
     width: 50%;

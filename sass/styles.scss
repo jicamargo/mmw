@@ -33,6 +33,7 @@ body {
 
   :hover {
     background-color: $color-orange;
+    color: $color-light-gray;
   }
 }
 
@@ -60,6 +61,55 @@ body {
 .navbar-toggler:focus {
   box-shadow: none !important;
 }
+
+/****************** MENU MOBILE *********************************************/
+.menu-bar-movil .slidemenu {
+  position: fixed;
+  background: $color-light-gray;
+  text-align: center;
+  top: 0;
+  padding: 0 1.5rem;
+  width: 100%;
+  height: 100vh;
+
+  /* to start hidden and showing it with "slide" animation */
+  left: -100%;
+  transition: all 0.3s ease;
+}
+
+.menu-bar-movil .slidemenu.active {
+  left: 0;
+}
+
+.btn-close-slide-menu {
+  display: block;
+  text-align: right;
+  height: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.btn-close-icon {
+  height: 1rem;
+}
+
+.item-menu-mobile {
+  display: block;
+  font-family: $font-lato;
+  color: $color-dark-gray;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid $color-dark-gray-transparent;
+}
+
+/* ------------  menu mobile ---------------------- */
+
+
+
 
 .hero {
   height: auto;
@@ -305,6 +355,10 @@ body {
 /****************** desktop version (768px) ***********************/
 
 @media screen and (min-width: 768px) {
+  .menu-bar-movil .slidemenu {
+    padding: 0 5rem;
+  }
+
   .img-card {
     margin-top: 1rem;
     width: 50%;
