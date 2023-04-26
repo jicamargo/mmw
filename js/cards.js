@@ -50,7 +50,7 @@
     div.innerHTML = `<div class="card mb-1">
         <div class="row g-1">
           <div class="col-2 col-md-12 img-cnt p-0">
-            <img src="${card.img}" class="img-fluid ms-2 ms-md-0" alt="${card.cardTitle} icon.">
+            <img src="${card.img}" class="img-fluid img-card ms-2 ms-md-0" alt="${card.cardTitle} icon.">
           </div>
           <div class="card-body col-4 col-md-12 text-center align-self-center">
             <h5 class="card-title">${card.cardTitle}</h5>
@@ -122,8 +122,8 @@ for (let i = 0; i < arrSpeakers.length; i += 1) {
   div.id = card.id;
   div.innerHTML = 
     `<div class="row g-4">
-      <div class="col-4 img-cnt p-0">
-        <img src="${card.img}" class="img-fluid" alt="${card.name} photo.">
+      <div class="col-4 img-cnt spk-img-cnt p-0">
+        <img src="${card.img}" class="img-fluid img-spk" alt="${card.name} photo.">
       </div>
       <div class="card-body col-8 text-left">
         <h5 class="spk-card-name">${card.name}</h5>

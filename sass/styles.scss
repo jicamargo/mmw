@@ -147,13 +147,36 @@ html, body {
     text-align: center;
     justify-content: center;
     .img-fluid {
-      width: 90%;
       border-radius: 50%;
       align-self: center;   
       backdrop-filter: invert(90%);
     }
   }
 }
+
+.img-card {
+  width: 90%;
+}
+
+/************************************************/
+.img-spk {
+  position: absolute;
+  width: 100px;
+  top: 4rem;
+  left: 0.5rem;
+}
+
+.spk-img-cnt::before {
+  content: '';
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../images/chess.jpg);
+  background-size: contain;
+}
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 .title-bottom-page {
   padding-top: 2rem;
@@ -194,12 +217,97 @@ html, body {
   margin: 1rem 0;
 }
 
+.footer-img-logo {
+  height: 3rem;
+}
+
+/*********************** styles for about page *********************/
+.about-hero-title {
+  margin-top: 6rem;
+  background-image: url('../images/mmw-sqr-logo.png');
+  background-size:contain;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: brightness(120%);
+
+  .title-hello {
+    padding-top: 1rem;
+    font-family: $font-coco;
+  }
+  
+  .title-mmw {
+    font-family: $font-coco-it;
+  }
+  
+  .title-year {
+    font-family: $font-coco-it;
+  }
+  
+  .title-slogan {
+    font-family: $font-coco;
+    font-size: small;
+  }
+
+  .title-date {
+    margin-top: 2rem;
+    font-family: $font-lato;
+    font-weight: bolder;
+    color: $color-light-gray;
+  }
+  
+  .title-place {
+    font-family: $font-lato;
+    color: $color-light-gray;
+    font-size: small; 
+  }  
+}
+
+.card-gallery {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.gal-card-title {
+  color: $color-light-gray;
+  font-family: $font-coco-it;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: $color-dark-gray 3px 3px;
+}
+
+.gal-card-text {
+  color: $color-light-gray;
+  font-family: $font-lato;
+  font-weight: bolder;
+  text-shadow: $color-dark-gray 2px 2px;
+  font-size: 1rem;
+} 
+
+.img-gallery {
+  height: 180px;
+}
 /****************** desktop version (768px) ***********************/
 
 @media screen and (min-width: 768px) {
  
-  .card .img-cnt .img-fluid {
+  .img-card {
       margin-top: 1rem;
       width: 50%;
   }
+
+  .footer-img-logo {
+    height: 5rem;
+  }
+
+  .img-gallery {
+    height: 270px;
+  }
+  
 }
