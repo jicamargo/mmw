@@ -21,7 +21,7 @@
 </head>
 <body>
   <header class="bg-light fixed-top">
-    <div class="container d-none d-md-block bg-dark">
+    <div class="d-none d-md-block bg-dark">
 			<div class="row justify-content-md-between align-items-center py-3">
 
 				<div class="col-md-6 text-center text-md-left order-md-0 order-1 my-4 my-md-0">
@@ -48,15 +48,15 @@
 			</div>
 		</div>
 
-    <div class="container top-menu">
+    <div class="top-menu">
       <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid ">
-          <a class="d-md-block navbar-brand" href="./index.html">
-            <img class="logo-navbar" src="./images/mmw-sm-logo.png" alt="">
-          </a>
           <button id="burguer-menu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span id="navbar-toggler-icon" class="navbar-toggler-icon"></span>
           </button>
+          <a class="d-md-block navbar-brand order-md-0" href="./index.html">
+            <img class="logo-navbar" src="./images/mmw-sm-logo.png" alt="">
+          </a>
           <div class="collapse navbar-collapse">
             <ul class="navbar-nav ms-auto mb-2 mb-md-0">
               <li class="nav-item">
@@ -69,7 +69,7 @@
                 <a class="nav-link" aria-current="page" href="#join">Join</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#sponsor">Sponsor</a>
+                <a class="nav-link" href="#partners">Sponsor</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#news">News</a>
@@ -99,7 +99,7 @@
               <a class="item-menu-mobile" aria-current="page" href="#join">Join</a>
             </li>
             <li class="nav-item">
-              <a class="item-menu-mobile" href="#sponsor">Sponsor</a>
+              <a class="item-menu-mobile" href="#partners">Sponsor</a>
             </li>
             <li class="nav-item">
               <a class="item-menu-mobile" href="#news">News</a>
@@ -110,12 +110,11 @@
           </ul>
         </nav>
       </div>  <!-- menu movil-->    
-
     </div>
   </header>
 
   <main>
-    <div class="container hero p-4">
+    <section class="hero p-4">
       <div class="hero-title">
         <h4 class="title-hello">Hello! Music lovers</h4>
         <h1 class="title-mmw">MIAMI MUSIC<br>
@@ -131,15 +130,15 @@
       </p>
       <h5 class="title-date">2023.06.22(THU) ~ 23(FRI)</h5>
       <p class="title-place">GREATER MIAMI CONVENTION & VISITORS BUREAU</p>
-    </div>
+    </section>
 
-    <div class="container page2 bg-dark p-4">
+    <section class="page2 bg-dark p-4">
       <h3 id="program" class="title-page text-white text-center pt-3">
         Main program
       </h3>
       <div class="short-line-center"></div>
 
-      <div id="cards-cnt" class="row row-cols-1 row-cols-md-5 g-2 mt-2">
+      <div id="cards-cnt" class="row gy-2 row-cols-1 row-cols-md-6 justify-content-center mt-4">
       </div>      
       
       <div id="join" class="join">
@@ -152,9 +151,9 @@
           <a #ref="#">SEE THE WHOLE PROGRAM</a>
         </h3>
       </div>
-    </div>
+    </section>
 
-    <div class="container page3 bg-light p-4">
+    <section class="page3 bg-light p-4">
       <h3 class="title-page text-dark text-center pt-3">
         Speakers
       </h3>    
@@ -162,12 +161,12 @@
 
       <div id="speakers-cnt" class="row row-cols-1 row-cols-md-2 g-4 border-0">
       </div>
-    </div>
+    </section>
 
   </main>
 
   <footer>
-    <div id="partners" class="container partners bg-dark p-4">
+    <div id="partners" class="partners bg-dark p-4">
       <h3 class="title-page text-light text-center pt-1">
         Partner
       </h3>
@@ -192,6 +191,18 @@
           </li>
       </ul>
     </div>
+    <section class="d-flex partner-section justify-content-center align-items-center">
+      <div class="d-flex container col-6 justify-content-center">
+        <div class="img-cnt">
+          <img class="partner-img-logo" src="./images/cc-logo-black.png" alt="Creative commons partner logo." /></a>
+        </div>
+      </div>
+      <div class="container col-6 justify-content-center align-items-center">
+        <div>
+          <p class="text-partner-section text-center p-0 m-0">2015 Creative Commons Korea<br>Some Rights Reserved</p>
+        </div>
+      </div>
+    </section>
   </footer>
 
 

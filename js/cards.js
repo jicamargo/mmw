@@ -44,12 +44,11 @@ for (let i = 0; i < arrCards.length; i += 1) {
   card = arrCards[i];
 
   div = document.createElement('div');
-  div.classList = 'card mb-1';
+  div.classList = 'card border-2 rounded-0';
   div.id = card.id;
 
-  div.innerHTML = `<div class="card mb-1">
-        <div class="row g-1">
-          <div class="col-2 col-md-12 img-cnt p-0">
+  div.innerHTML = `<div class="row">
+          <div class="col-2 col-md-12 img-cnt">
             <img src="${card.img}" class="img-fluid img-card ms-2 ms-md-0" alt="${card.cardTitle} icon.">
           </div>
           <div class="card-body col-4 col-md-12 text-center align-self-center">
@@ -58,7 +57,6 @@ for (let i = 0; i < arrCards.length; i += 1) {
           <div class="col-6 col-md-12 py-4 px-2 text-center">
             <p class="card-text">${card.cardText}</p>
           </div>
-        </div>
       </div>`;
   cardcnt.appendChild(div);
 }

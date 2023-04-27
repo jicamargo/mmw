@@ -176,8 +176,9 @@ If you like this project, please give a ⭐️ (Thank you)
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- [Microverse team]()https://microverse.org/
+- Thanks to [Cindy Shin](https://www.behance.net/adagio07) who is the [author of the original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) 
 - [Creative Commons.](https://creativecommons.org/)
+- [Microverse team]()https://microverse.org/
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

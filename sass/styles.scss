@@ -2,10 +2,11 @@ $color-dark-gray: #272a31;
 $color-dark-gray-transparent: #272a3180;
 $color-orange: #ec5242;
 $color-light-gray: #d3d3d3;
-$color-light-gray-transparent: #d3d3d310;
+$color-light-gray-transparent: #d3d3d330;
 $font-lato: 'lato', serif;
 $font-coco: 'cocogoose';
 $font-coco-it: 'cocogoose-it';
+$color-white: white;
 
 @font-face {
   font-family: cocogoose;
@@ -208,8 +209,11 @@ body {
   }
 }
 
+.card:hover{
+  border: $color-light-gray solid 2px;
+}
 .img-card {
-  width: 90%;
+  width: 55px;
 }
 
 /***********************************************   */
@@ -276,6 +280,14 @@ body {
   height: 3rem;
 }
 
+.partner-img-logo {
+  width: 100px;
+}
+
+.text-partner-section {
+  color: $color-dark-gray;
+  font-size: 0.8rem;
+}
 /*********************** styles for about page *********************/
 .about-hero-title {
   margin-top: 6rem;
@@ -317,6 +329,23 @@ body {
   }
 }
 
+.title-middle-section{
+  line-height: 2rem;
+}
+
+.logo-winner {
+  width: 100%;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid $color-light-gray;
+}
+
+.middle-section {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid $color-light-gray;
+}
+
 .card-gallery {
   margin: 0 !important;
   padding: 0 !important;
@@ -330,7 +359,7 @@ body {
 }
 
 .gal-card-title {
-  color: $color-light-gray;
+  color: $color-white;
   font-family: $font-coco-it;
   font-size: 2rem;
   font-weight: bolder;
@@ -338,17 +367,21 @@ body {
 }
 
 .gal-card-text {
-  color: $color-light-gray;
+  color: $color-white;
   font-family: $font-lato;
   font-weight: bolder;
-  text-shadow: $color-dark-gray 2px 2px;
+  text-shadow: $color-dark-gray 3px 3px;
   font-size: 1rem;
 }
 
 .img-gallery {
   height: 180px;
+  filter: sepia(1) hue-rotate(330deg) saturate(220%);
 }
 
+.partner-section {
+  padding: 3rem 0;
+}
 /****************** desktop version (768px) ***********************/
 
 @media screen and (min-width: 768px) {
@@ -358,7 +391,6 @@ body {
 
   .img-card {
     margin-top: 1rem;
-    width: 50%;
   }
 
   .footer-img-logo {
