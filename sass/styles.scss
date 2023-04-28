@@ -119,7 +119,7 @@ body {
 }
 
 .hero-title {
-  margin-top: 6rem;
+  margin-top: 5rem;
   background-image: url('../images/mmw-sqr-logo.png');
   background-size: contain;
   -webkit-background-clip: text;
@@ -127,16 +127,18 @@ body {
   filter: brightness(120%);
 
   .title-hello {
-    padding-top: 1rem;
     font-family: $font-coco;
+    font-size: 1.5rem;
   }
 
   .title-mmw {
     font-family: $font-coco;
+    font-size: 2.5rem;
   }
 
   .title-year {
     font-family: $font-coco-it;
+    font-size: 3rem;
   }
 
   .title-slogan {
@@ -149,11 +151,13 @@ body {
   font-family: $font-lato;
   color: $color-light-gray;
   backdrop-filter: saturate(150%);
+  box-shadow: 0 0 25px 0 inset $color-light-gray;
 }
 
 .title-date {
   margin-top: 2rem;
   font-family: $font-coco-it;
+  font-size: 1.3rem;
   color: $color-light-gray;
 }
 
@@ -209,9 +213,10 @@ body {
   }
 }
 
-.card:hover{
+.card:hover {
   border: $color-light-gray solid 2px;
 }
+
 .img-card {
   width: 55px;
 }
@@ -288,9 +293,10 @@ body {
   color: $color-dark-gray;
   font-size: 0.8rem;
 }
+
 /*********************** styles for about page *********************/
 .about-hero-title {
-  margin-top: 6rem;
+  margin-top: 4rem;
   background-image: url('../images/mmw-sqr-logo.png');
   background-size: contain;
   -webkit-background-clip: text;
@@ -329,7 +335,7 @@ body {
   }
 }
 
-.title-middle-section{
+.title-middle-section {
   line-height: 2rem;
 }
 
@@ -382,6 +388,7 @@ body {
 .partner-section {
   padding: 3rem 0;
 }
+
 /****************** desktop version (768px) ***********************/
 
 @media screen and (min-width: 768px) {
@@ -399,5 +406,109 @@ body {
 
   .img-gallery {
     height: 270px;
+  }
+
+  /************** MAIN PAGE *********************************/
+  .hero-box {
+    padding-left: 7rem;
+  }
+
+  .hero-title {
+    margin-top: 10rem;
+    background-image: url('../images/mmw-sqr-logo.png');
+    background-size: contain;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: brightness(120%);
+
+    .title-hello {
+      font-family: $font-coco;
+      font-size: 2.5rem;
+    }
+
+    .title-mmw {
+      font-family: $font-coco;
+      font-size: 4.5rem;
+    }
+
+    .title-year {
+      font-family: $font-coco-it;
+      font-size: 4.5rem;
+    }
+
+    .title-slogan {
+      font-family: $font-coco;
+      font-size: 2.5rem;
+    }
+
+    .title-descrip {
+      width: 80%;
+      font-family: $font-lato;
+      color: $color-light-gray;
+      backdrop-filter: saturate(150%);
+      box-shadow: 0 0 25px 0 inset $color-light-gray;
+      font-size: 1rem;
+    }
+  }
+
+  .title-date {
+    font-family: $font-coco-it;
+    font-size: 2.5rem;
+    color: $color-light-gray;
+    margin-top: -10px;
+    margin-bottom: -5px;
+  }
+
+  .title-place {
+    font-family: $font-coco;
+    color: $color-light-gray;
+    font-size: 1.2rem;
+  }
+
+  /*********************** desktop MQ for about page *********************/
+  .about-hero-title {
+    margin-top: 7rem;
+    background-image: url('../images/mmw-sqr-logo.png');
+    background-size: contain;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: brightness(120%);
+
+    .title-hello {
+      font-family: $font-coco;
+      font-size: 2rem;
+    }
+
+    .title-mmw {
+      font-family: $font-coco-it;
+      font-size: 4.5rem;
+    }
+
+    .title-year {
+      font-family: $font-coco-it;
+    }
+
+    .title-slogan {
+      font-family: $font-coco;
+      font-size: 2rem;
+    }
+
+    .title-descrip {
+      font-size: 1.2rem;
+    }
+
+    .title-date {
+      margin-top: 2rem;
+      font-family: $font-lato;
+      font-weight: bolder;
+      color: $color-light-gray;
+      font-size: 2rem;
+    }
+
+    .title-place {
+      font-family: $font-lato;
+      color: $color-light-gray;
+      font-size: 1.5rem;
+    }
   }
 }

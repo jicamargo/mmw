@@ -119,7 +119,7 @@ Open this site in your browser and enjoy.
 
 ### Walkthrough Video
 
-[comming soon](https://)
+[Watch the Video Walkthrough](https://www.loom.com/share/17f72fbf89264d7bb7f04c448a0fc654)
 
 ### Prerequisites
   In order to run this project you need:
