@@ -1,0 +1,514 @@
+$color-dark-gray: #272a31;
+$color-dark-gray-transparent: #272a3180;
+$color-orange: #ec5242;
+$color-light-gray: #d3d3d3;
+$color-light-gray-transparent: #d3d3d330;
+$font-lato: 'lato', serif;
+$font-coco: 'cocogoose';
+$font-coco-it: 'cocogoose-it';
+$color-white: white;
+
+@font-face {
+  font-family: cocogoose;
+  src: url('../fonts/cocogoose-pro.ttf');
+}
+
+@font-face {
+  font-family: cocogoose-it;
+  src: url('../fonts/cocogoose-pro-italic.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-lato;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.nav-item {
+  font-weight: bolder;
+
+  :hover {
+    background-color: $color-orange;
+    color: $color-light-gray;
+  }
+}
+
+.logo-navbar {
+  height: 30px;
+  width: auto;
+}
+
+.top-menu,
+.navbar {
+  background-color: $color-light-gray !important;
+  padding: 0.2rem 0.5rem;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.show {
+  .nav-item {
+    text-align: center;
+  }
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+/****************** MENU MOBILE *********************************************/
+.menu-bar-movil .slidemenu {
+  position: fixed;
+  background: $color-light-gray;
+  text-align: center;
+  top: 0;
+  padding: 0 1.5rem;
+  width: 100%;
+  height: 100vh;
+
+  /* to start hidden and showing it with "slide" animation */
+  left: -100%;
+  transition: all 0.3s ease;
+}
+
+.menu-bar-movil .slidemenu.active {
+  left: 0;
+}
+
+.btn-close-slide-menu {
+  display: block;
+  text-align: right;
+  height: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.btn-close-icon {
+  height: 1rem;
+}
+
+.item-menu-mobile {
+  display: block;
+  font-family: $font-lato;
+  color: $color-dark-gray;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid $color-dark-gray-transparent;
+}
+
+/* ------------  menu mobile ---------------------- */
+
+.hero {
+  height: auto;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 0.4), rgb(236, 82, 66, 0.7)), url("../images/mmw-sm-logo.png"), url("../images/mmw-2023.webp");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: bottom right, bottom right, right;
+  background-size: contain, 30%, cover;
+}
+
+.hero-title {
+  margin-top: 5rem;
+  background-image: url('../images/mmw-sqr-logo.png');
+  background-size: contain;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: brightness(120%);
+
+  .title-hello {
+    font-family: $font-coco;
+    font-size: 1.5rem;
+  }
+
+  .title-mmw {
+    font-family: $font-coco;
+    font-size: 2.5rem;
+  }
+
+  .title-year {
+    font-family: $font-coco-it;
+    font-size: 3rem;
+  }
+
+  .title-slogan {
+    font-family: $font-coco;
+    font-size: small;
+  }
+}
+
+.title-descrip {
+  font-family: $font-lato;
+  color: $color-light-gray;
+  backdrop-filter: saturate(150%);
+  box-shadow: 0 0 25px 0 inset $color-light-gray;
+}
+
+.title-date {
+  margin-top: 2rem;
+  font-family: $font-coco-it;
+  font-size: 1.3rem;
+  color: $color-light-gray;
+}
+
+.title-place {
+  font-family: $font-coco;
+  color: $color-light-gray;
+  font-size: small;
+}
+
+.page2 {
+  background: url("../images/background-x.png") repeat;
+}
+
+.title-page {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.short-line-center {
+  border-top: 2px solid $color-orange;
+  height: 2px;
+  max-width: 50px;
+  padding: 0;
+  margin: 20px auto 0 auto;
+}
+
+.card {
+  background-color: $color-light-gray-transparent;
+  cursor: pointer;
+
+  .card-title {
+    color: $color-orange;
+    font-family: $font-coco;
+    font-size: 1rem;
+  }
+
+  .card-text {
+    color: $color-light-gray;
+    font-family: $font-lato;
+    font-size: 0.8rem;
+  }
+
+  .img-cnt {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    .img-fluid {
+      border-radius: 50%;
+      align-self: center;
+      backdrop-filter: invert(90%);
+    }
+  }
+}
+
+.card:hover {
+  border: $color-light-gray solid 2px;
+}
+
+.img-card {
+  width: 55px;
+}
+
+/***********************************************   */
+.img-spk {
+  position: absolute;
+  width: 100px;
+  top: 4rem;
+  left: 0.5rem;
+}
+
+.spk-img-cnt::before {
+  content: '';
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  background-image: url(../images/chess.jpg);
+  background-size: contain;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.title-bottom-page {
+  padding-top: 2rem;
+  font-size: 1rem;
+  color: $color-light-gray;
+  font-family: $font-lato;
+}
+
+.btn-join {
+  background-color: $color-orange;
+  cursor: pointer;
+}
+
+.spk-card-name {
+  color: $color-dark-gray;
+  font-family: $font-lato;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.spk-card-title {
+  color: $color-orange;
+  font-family: $font-coco-it;
+  font-size: 0.8rem;
+}
+
+.spk-card-text {
+  color: $color-dark-gray;
+  font-family: $font-lato;
+  font-size: 0.8rem;
+}
+
+.spk-short-line {
+  border-top: 2px solid $color-light-gray;
+  height: 2px;
+  max-width: 30px;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.footer-img-logo {
+  height: 3rem;
+}
+
+.partner-img-logo {
+  width: 100px;
+}
+
+.text-partner-section {
+  color: $color-dark-gray;
+  font-size: 0.8rem;
+}
+
+/*********************** styles for about page *********************/
+.about-hero-title {
+  margin-top: 4rem;
+  background-image: url('../images/mmw-sqr-logo.png');
+  background-size: contain;
+  -webkit-background-clip: text;
+  color: transparent;
+  filter: brightness(120%);
+
+  .title-hello {
+    padding-top: 1rem;
+    font-family: $font-coco;
+  }
+
+  .title-mmw {
+    font-family: $font-coco-it;
+  }
+
+  .title-year {
+    font-family: $font-coco-it;
+  }
+
+  .title-slogan {
+    font-family: $font-coco;
+    font-size: small;
+  }
+
+  .title-date {
+    margin-top: 2rem;
+    font-family: $font-lato;
+    font-weight: bolder;
+    color: $color-light-gray;
+  }
+
+  .title-place {
+    font-family: $font-lato;
+    color: $color-light-gray;
+    font-size: small;
+  }
+}
+
+.title-middle-section {
+  line-height: 2rem;
+}
+
+.logo-winner {
+  width: 100%;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid $color-light-gray;
+}
+
+.middle-section {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid $color-light-gray;
+}
+
+.card-gallery {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.card-img-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gal-card-title {
+  color: $color-white;
+  font-family: $font-coco-it;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-shadow: $color-dark-gray 3px 3px;
+}
+
+.gal-card-text {
+  color: $color-white;
+  font-family: $font-lato;
+  font-weight: bolder;
+  text-shadow: $color-dark-gray 3px 3px;
+  font-size: 1rem;
+}
+
+.img-gallery {
+  height: 180px;
+  filter: sepia(1) hue-rotate(330deg) saturate(220%);
+}
+
+.partner-section {
+  padding: 3rem 0;
+}
+
+/****************** desktop version (768px) ***********************/
+
+@media screen and (min-width: 768px) {
+  .menu-bar-movil .slidemenu {
+    padding: 0 5rem;
+  }
+
+  .img-card {
+    margin-top: 1rem;
+  }
+
+  .footer-img-logo {
+    height: 5rem;
+  }
+
+  .img-gallery {
+    height: 270px;
+  }
+
+  /************** MAIN PAGE *********************************/
+  .hero-box {
+    padding-left: 7rem;
+  }
+
+  .hero-title {
+    margin-top: 10rem;
+    background-image: url('../images/mmw-sqr-logo.png');
+    background-size: contain;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: brightness(120%);
+
+    .title-hello {
+      font-family: $font-coco;
+      font-size: 2.5rem;
+    }
+
+    .title-mmw {
+      font-family: $font-coco;
+      font-size: 4.5rem;
+    }
+
+    .title-year {
+      font-family: $font-coco-it;
+      font-size: 4.5rem;
+    }
+
+    .title-slogan {
+      font-family: $font-coco;
+      font-size: 2.5rem;
+    }
+
+    .title-descrip {
+      width: 80%;
+      font-family: $font-lato;
+      color: $color-light-gray;
+      backdrop-filter: saturate(150%);
+      box-shadow: 0 0 25px 0 inset $color-light-gray;
+      font-size: 1rem;
+    }
+  }
+
+  .title-date {
+    font-family: $font-coco-it;
+    font-size: 2.5rem;
+    color: $color-light-gray;
+    margin-top: -10px;
+    margin-bottom: -5px;
+  }
+
+  .title-place {
+    font-family: $font-coco;
+    color: $color-light-gray;
+    font-size: 1.2rem;
+  }
+
+  /*********************** desktop MQ for about page *********************/
+  .about-hero-title {
+    margin-top: 7rem;
+    background-image: url('../images/mmw-sqr-logo.png');
+    background-size: contain;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: brightness(120%);
+
+    .title-hello {
+      font-family: $font-coco;
+      font-size: 2rem;
+    }
+
+    .title-mmw {
+      font-family: $font-coco-it;
+      font-size: 4.5rem;
+    }
+
+    .title-year {
+      font-family: $font-coco-it;
+    }
+
+    .title-slogan {
+      font-family: $font-coco;
+      font-size: 2rem;
+    }
+
+    .title-descrip {
+      font-size: 1.2rem;
+    }
+
+    .title-date {
+      margin-top: 2rem;
+      font-family: $font-lato;
+      font-weight: bolder;
+      color: $color-light-gray;
+      font-size: 2rem;
+    }
+
+    .title-place {
+      font-family: $font-lato;
+      color: $color-light-gray;
+      font-size: 1.5rem;
+    }
+  }
+}
